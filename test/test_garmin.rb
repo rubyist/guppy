@@ -25,12 +25,12 @@ class TestGarmin < Test::Unit::TestCase
 
   context "opening database files" do
     should "use TcxParser for tcx files" do
-      flexmock(Garmin::TcxParser).should_receive(:new).once
+      flexmock(Garmin::TcxParser).should_receive(:new).with('foo.tcx').once
       Garmin.open('foo.tcx')
     end
 
     should "use GpxParser for gpx files" do
-      flexmock(Garmin::GpxParser).should_receive(:new).once
+      flexmock(Garmin::GpxParser).should_receive(:new).with('foo.gpx').once
       Garmin.open('foo.gpx')
     end
   end
