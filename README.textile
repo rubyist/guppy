@@ -1,0 +1,31 @@
+Utility classes for dealing with Garmin Forerunner data.
+
+Supported formats:
+ * tcx (From Garmin Training Center)
+ * gpx (From LoadMyTracks)
+
+g = Garmin.open('file.tcx')
+
+g.activities
+g.activities('2009-01-12T19:28:18Z')
+
+# Select an activity
+activity.date
+activity.activity_type
+activity.distance
+activity.average_pace
+activity.average_heart_rate
+
+
+activity.track_points
+
+activity.track_points.pace
+activity.track_points.heart_rate
+
+activity.track_points[0].latitude
+activity.track_points[0].longitude
+activity.track_points[0].altitude
+activity.track_points[0].heart_rate
+activity.track_points[0].time
+activity.track_points[0].distance
+
