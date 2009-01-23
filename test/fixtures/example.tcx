@@ -1,0 +1,2109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2 http://www.garmin.com/xmlschemas/TrainingCenterDatabasev2.xsd">
+
+  <Folders/>
+
+  <Activities>
+    <Activity Sport="Running">
+      <Id>2009-01-12T19:28:18Z</Id>
+      <Lap StartTime="2009-01-12T19:28:18Z">
+        <TotalTimeSeconds>641.4300000</TotalTimeSeconds>
+        <DistanceMeters>1609.3439941</DistanceMeters>
+        <MaximumSpeed>3.4845836</MaximumSpeed>
+        <Calories>170</Calories>
+        <AverageHeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+          <Value>184</Value>
+        </AverageHeartRateBpm>
+        <MaximumHeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+          <Value>196</Value>
+        </MaximumHeartRateBpm>
+        <Intensity>Active</Intensity>
+        <Cadence>0</Cadence>
+        <TriggerMethod>Distance</TriggerMethod>
+        <Track>
+          <Trackpoint>
+            <Time>2009-01-12T19:28:18Z</Time>
+            <Position>
+              <LatitudeDegrees>37.1057968</LatitudeDegrees>
+              <LongitudeDegrees>-80.5901920</LongitudeDegrees>
+            </Position>
+            <AltitudeMeters>253.9254150</AltitudeMeters>
+            <DistanceMeters>0.0000000</DistanceMeters>
+            <HeartRateBpm xsi:type="HeartRateInBeatsPerMinute_t">
+              <Value>130</Value>
+            </HeartRateBpm>
+            <SensorState>Absent</SensorState>
+          </Trackpoint>
+        </Track>
+      </Lap>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Activity>
+  </Activities>
+
+  <Workouts>
+    <Workout Sport="Running">
+      <Name>R-Fartlek</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>10</StepId>
+        <Repetitions>2</Repetitions>
+        <Child xsi:type="Repeat_t">
+          <StepId>6</StepId>
+          <Repetitions>2</Repetitions>
+          <Child xsi:type="Step_t">
+            <StepId>4</StepId>
+            <Duration xsi:type="Distance_t">
+              <Meters>160</Meters>
+            </Duration>
+            <Intensity>Active</Intensity>
+            <Target xsi:type="Speed_t">
+              <SpeedZone xsi:type="PredefinedSpeedZone_t">
+                <Number>7</Number>
+              </SpeedZone>
+            </Target>
+          </Child>
+          <Child xsi:type="Step_t">
+            <StepId>5</StepId>
+            <Duration xsi:type="Distance_t">
+              <Meters>160</Meters>
+            </Duration>
+            <Intensity>Resting</Intensity>
+            <Target xsi:type="HeartRate_t">
+              <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+                <Number>2</Number>
+              </HeartRateZone>
+            </Target>
+          </Child>
+        </Child>
+        <Child xsi:type="Repeat_t">
+          <StepId>9</StepId>
+          <Repetitions>2</Repetitions>
+          <Child xsi:type="Step_t">
+            <StepId>7</StepId>
+            <Duration xsi:type="Time_t">
+              <Seconds>10</Seconds>
+            </Duration>
+            <Intensity>Active</Intensity>
+            <Target xsi:type="Speed_t">
+              <SpeedZone xsi:type="PredefinedSpeedZone_t">
+                <Number>8</Number>
+              </SpeedZone>
+            </Target>
+          </Child>
+          <Child xsi:type="Step_t">
+            <StepId>8</StepId>
+            <Duration xsi:type="Time_t">
+              <Seconds>60</Seconds>
+            </Duration>
+            <Intensity>Resting</Intensity>
+            <Target xsi:type="HeartRate_t">
+              <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+                <Number>2</Number>
+              </HeartRateZone>
+            </Target>
+          </Child>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>11</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>12</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Fartlek is a Scandinavian term meaning "Speed Play." This type of workout is usually conducted by choosing landmarks on the horizon and then picking up your speed until you reach that landmark before backing off to rest while you search for another target. You can now accomplish the same goal by programming your Garmin device with intervals of varying distances and times. Remember, Fartlek is not an all-out sprint, but the effort can approximate race pace, so be sure to warm-up and cool-down.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Int(1/2s)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>6</StepId>
+        <Repetitions>4</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>4</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>804</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>4</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>5</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>240</Seconds>
+          </Duration>
+          <Intensity>Resting</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>2</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Intervals can be prescribed in time or distance. This workout uses time for warm up and cool down. It prescribes the repeated interval steps in distance and the rest steps in time. In this particular workout, the rest time should be equal to the time it takes to complete the interval, since the interval is short and the intensity is high. You should adjust the duration to fit your own ability. Feel free to walk during the rest segment, but keep moving so you don't get cold or stiff. It is very important to warm-up and cool-down before and after all interval workouts, and you should adjust the duration of these steps to accommodate your own personal needs and to fit your workout environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-TT(1Mile)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>1609</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="None_t"/>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>6</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Time Trials over different distances can be a great way to keep track of your progress and fitness over time. Time trials are usually conducted on a track or a measured race course, but with the help of your Garmin device, you can now conduct these tests along your normal running routes. Since a Time Trial is an all-out effort, be sure to warm up and cool down appropriately for your ability and environment. As a rule of thumb, shorter Time Trials require a longer warm up and cool down. Be sure to conduct Time Trials at a variety of distances. Constantly competing against yourself over the same distance can lead to frustration, especially as you approach higher levels of fitness and incremental gains become more and more challenging.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Base(Dis)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>1609</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>1609</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>1609</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Notes>Base workouts can be prescribed in either distance or time. This template uses distance. Adjust the duration of each step to fit your own goals. Most of your running/walking should be at a base pace that allows casual conversation. Your heart rate should be elevated from rest, but should not be too high. Most of the time, this equates to Zones 1 and 2.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Int(1/4s)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>6</StepId>
+        <Repetitions>4</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>4</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>402</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>4</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>5</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>90</Seconds>
+          </Duration>
+          <Intensity>Resting</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>2</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Intervals can be prescribed in time or distance. This workout uses time for warm up and cool down. It prescribes the repeated interval steps in distance and the rest steps in time. In this particular workout, the rest time should be equal to the time it takes to complete the interval since the interval is short and the intensity is high. You should adjust the duration to fit your own ability. Feel free to walk during the rest segment, but keep moving so you don't get cold or stiff. It is very important to warm-up and cool-down before and after all interval workouts, and you should adjust the duration of these steps to accommodate your own personal needs and to fit your workout environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-WU/CD(Time)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>6</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Warm Up and Cool Down can be prescribed in either time or distance. This template uses time. Since it is important to warm up and cool down before and after most workouts, this template is valuable as a starting point for building your own custom workouts. Be sure to modify the durations to fit your own ability and training environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-NegativeSplit</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Notes>A negative split workout involves running the second half of a workout slightly faster than the first half. This type of workout is usually prescribed in distance and conducted on an out and back course. Start by warming up for a few minutes so that you can get your heart rate up before starting your main effort. The goal of this type of workout is to teach your body to gradually warm up during the first half of your workout and then develop the ability to get stronger as you progress. Most world-record running race performances are accomplished using a negative split strategy. Adjust the duration and effort to fit your personal ability and goals.  Remember to use your "extra time" on the way back to cool-down.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Int(Time)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>6</StepId>
+        <Repetitions>3</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>4</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>420</Seconds>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>3</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>5</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>60</Seconds>
+          </Duration>
+          <Intensity>Resting</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>2</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Intervals can be prescribed in time or distance. This workout uses distance for warm up and cool down. It prescribes the repeated interval steps in time and the rest steps in distance. In this particular workout, the rest time should be kept relatively short. The interval time is similar to mile repeats. This can be very taxing and should be conducted at a slow pace and lower heart rate than shorter intervals. This requires less rest, but allows you to maintain a higher heart rate throughout the course of the entire workout. Some people call this sort of workout "Cruise Intervals." You should adjust the duration to fit your own ability. Feel free to walk during the rest segment, but keep moving so you don't get cold or stiff. It is very important to warm-up and cool-down before and after all interval workouts and you should adjust the duration of these sets to accommodate your own personal needs and to fit your workout environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-WU/CD(Dis)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>6</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>402</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Warm Up and Cool Down can be prescribed in either time or distance. This template uses distance. Since it is important to warm up and cool down before and after most workouts, this template is valuable as a starting point for building your own custom workouts. Be sure to modify the durations to fit your own ability and training environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Tempo(HR)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Resting</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>1200</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>4</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>6</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>A tempo workout is a high-intensity workout designed to increase your lactate threshold. This is usually accomplished by training in heart rate zone 4 for a sustained time or distance.  The duration of this tempo workout is prescribed using time.  Generally, durations for tempo workouts should not exceed 20 minutes, and you can certainly use shorter durations to fit your ability and training goals.  Since tempo workouts are designed to teach your body to deal with relatively high-intensity work, the level of intensity during the workout must be closely monitored. You can monitor intensity using either heart rate or pace. This template uses heart rate. Since this workout is fairly stressful, it is very important to warm up and cool down sufficiently.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Ladder</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>6</StepId>
+        <Repetitions>2</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>4</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>160</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>4</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>5</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>160</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>2</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>9</StepId>
+        <Repetitions>2</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>7</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>321</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="Speed_t">
+            <SpeedZone xsi:type="PredefinedSpeedZone_t">
+              <Number>4</Number>
+            </SpeedZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>8</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>321</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>2</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>12</StepId>
+        <Repetitions>2</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>10</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>160</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>4</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>11</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>160</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="Speed_t">
+            <SpeedZone xsi:type="PredefinedSpeedZone_t">
+              <Number>2</Number>
+            </SpeedZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>13</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>14</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>15</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>A ladder is a set of intervals that increase and then decrease in time, distance or intensity. In this set, the warm-up and cool-down sections represent one form of a ladder and the main set is another ladder. As with all interval workouts, the warm-up and cool-down phase is very important, and you should adjust the duration to fit your own ability and training environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Base(Time)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>600</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Notes>Base workouts can be prescribed in either distance or time. This template uses time. Adjust the duration of each step to fit your own goals. Most of your running/walking should be at a base pace that allows casual conversation. Your heart rate should be elevated from rest, but should not be too high. Most of the time, this equates to Zones 1 and 2.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Running">
+      <Name>R-Int(Miles)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>6</StepId>
+        <Repetitions>3</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>4</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>1609</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>3</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>5</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>60</Seconds>
+          </Duration>
+          <Intensity>Resting</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>2</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Intervals can be prescribed in time or distance. This workout uses time for warm up and cool down. It prescribes the repeated interval steps in distance and the rest steps in time. In this particular workout, the rest time should be kept relatively short. Mile repeats are fairly long for intervals and very taxing. They should be conducted at a slower pace and lower heart rate than shorter intervals. This requires less rest, but allows you to maintain a higher heart rate throughout the course of the entire workout. Some people call this sort of workout "Cruise Intervals." You should adjust the duration to fit your own ability. Feel free to walk during the rest segment, but keep moving so you don't get cold or stiff. It is very important to warm-up and cool-down before and after all interval workouts, and you should adjust the duration of these sets to accommodate your own personal needs and to fit your workout environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-WU/CD(Dis)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>6</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>3218</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Warm Up and Cool Down can be prescribed in either time or distance. This template uses distance. Since it is important to warm up and cool down before and after most workouts, this template is valuable as a starting point for building your own custom workouts. Be sure to modify the durations to fit your own ability and training environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-TT(5Miles)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>8046</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="None_t"/>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>6</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>120</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Time Trials over different distances can be a great way to keep track of your progress and fitness over time. Time trials are usually conducted on a track or a measured race course, but with the help of your Garmin device, you can now conduct these tests along your normal riding routes. Since a Time Trial is an all out effort, be sure to warm up and cool down appropriately for your ability and environment. As a rule of thumb, shorter Time Trials require a longer warm up and cool down. Be sure to conduct Time Trials at a variety of distances. Constantly competing against yourself over the same distance can lead to frustration, especially as you approach higher levels of fitness and incremental gains become more and more challenging.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-Base(Time)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>600</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>1200</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>600</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Notes>Base workouts can be prescribed in either distance or time. This template uses time. Adjust the duration of each set to fit your own goals. Most of your riding should be at a base pace that allows casual conversation. Your heart rate should be elevated from rest, but should not be too high. Most of the time, this equates to Zones 1 and 2. You should adjust the duration to fit your own goals and ability.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-SpeedPlay</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>10</StepId>
+        <Repetitions>5</Repetitions>
+        <Child xsi:type="Repeat_t">
+          <StepId>6</StepId>
+          <Repetitions>2</Repetitions>
+          <Child xsi:type="Step_t">
+            <StepId>4</StepId>
+            <Duration xsi:type="Distance_t">
+              <Meters>1609</Meters>
+            </Duration>
+            <Intensity>Active</Intensity>
+            <Target xsi:type="Speed_t">
+              <SpeedZone xsi:type="PredefinedSpeedZone_t">
+                <Number>7</Number>
+              </SpeedZone>
+            </Target>
+          </Child>
+          <Child xsi:type="Step_t">
+            <StepId>5</StepId>
+            <Duration xsi:type="Distance_t">
+              <Meters>1609</Meters>
+            </Duration>
+            <Intensity>Resting</Intensity>
+            <Target xsi:type="HeartRate_t">
+              <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+                <Number>2</Number>
+              </HeartRateZone>
+            </Target>
+          </Child>
+        </Child>
+        <Child xsi:type="Repeat_t">
+          <StepId>9</StepId>
+          <Repetitions>2</Repetitions>
+          <Child xsi:type="Step_t">
+            <StepId>7</StepId>
+            <Duration xsi:type="Time_t">
+              <Seconds>60</Seconds>
+            </Duration>
+            <Intensity>Active</Intensity>
+            <Target xsi:type="Speed_t">
+              <SpeedZone xsi:type="PredefinedSpeedZone_t">
+                <Number>8</Number>
+              </SpeedZone>
+            </Target>
+          </Child>
+          <Child xsi:type="Step_t">
+            <StepId>8</StepId>
+            <Duration xsi:type="Time_t">
+              <Seconds>60</Seconds>
+            </Duration>
+            <Intensity>Resting</Intensity>
+            <Target xsi:type="HeartRate_t">
+              <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+                <Number>2</Number>
+              </HeartRateZone>
+            </Target>
+          </Child>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>11</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>12</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Speed Play by yourself on the bike is a great way to simulate the natural ebb and flow of riding in a pack. This type of workout is usually conducted by choosing landmarks on the horizon and then picking up your speed until you reach that landmark before backing off to rest while you search for another target. You can now accomplish the same goal by programming your Garmin device with intervals of varying distances and times. Remember, Speed-Play is not necessarily an all-out sprint, but the effort can approximate race pace, so be sure to warm up and cool down.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-Int(Miles)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>6</StepId>
+        <Repetitions>5</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>4</StepId>
+          <Duration xsi:type="Distance_t">
+            <Meters>1609</Meters>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>4</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>5</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>120</Seconds>
+          </Duration>
+          <Intensity>Resting</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>2</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>7</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>8</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Intervals can be prescribed in time or distance. This workout uses time for warm up and cool down. It prescribes the repeated interval steps in time and the rest steps in distance. In this particular workout, the rest time should be about equal to the interval effort. Adjust the duration of rest to fit your own goals and fitness level. Pedal easy for the rest segment, but keep working so you don't get cold or stiff. It is very important to warm up and cool down before and after all interval workouts, and you should adjust the duration of these sets to accommodate your own personal needs and to fit your workout environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-WU/CD(Time)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>4</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>3</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>6</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>300</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Warm Up and Cool Down can be prescribed in either time or distance. This template uses time. Since it is important to warm up and cool down before and after most workouts, this template is valuable as a starting point for building your own custom workouts. Be sure to modify the durations to fit your own ability and training environment.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-HillSim</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>1200</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Repeat_t">
+        <StepId>4</StepId>
+        <Repetitions>10</Repetitions>
+        <Child xsi:type="Step_t">
+          <StepId>2</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>300</Seconds>
+          </Duration>
+          <Intensity>Active</Intensity>
+          <Target xsi:type="Speed_t">
+            <SpeedZone xsi:type="PredefinedSpeedZone_t">
+              <Number>3</Number>
+            </SpeedZone>
+          </Target>
+        </Child>
+        <Child xsi:type="Step_t">
+          <StepId>3</StepId>
+          <Duration xsi:type="Time_t">
+            <Seconds>60</Seconds>
+          </Duration>
+          <Intensity>Resting</Intensity>
+          <Target xsi:type="HeartRate_t">
+            <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+              <Number>1</Number>
+            </HeartRateZone>
+          </Target>
+        </Child>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>5</StepId>
+        <Duration xsi:type="Time_t">
+          <Seconds>1200</Seconds>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>If you live in an area without a lot of hills, you can use your gears to simulate the effect of climbing. Turning a big gear slowly to approximate a hill will mean that your speed remains relatively slow. As you use your gears to simulate the feeling of climbing, you can alternate between sitting and standing. Monitor your heart rate to keep the effort under control.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Biking">
+      <Name>B-Base(Dis)</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>8046</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>2</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>16093</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>2</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Step xsi:type="Step_t">
+        <StepId>3</StepId>
+        <Duration xsi:type="Distance_t">
+          <Meters>8046</Meters>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="Speed_t">
+          <SpeedZone xsi:type="PredefinedSpeedZone_t">
+            <Number>1</Number>
+          </SpeedZone>
+        </Target>
+      </Step>
+      <Notes>Base workouts can be prescribed in either distance or time. This template uses distance. Adjust the duration of each set to fit your own goals. Most of your riding should be at a base pace that allows casual conversation. Your heart rate should be elevated from rest, but should not be too high. Most of the time, this equates to Zones 1 and 2. You should adjust the duration to fit your own goals and ability.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+    <Workout Sport="Other">
+      <Name>O-CalorieBurner</Name>
+      <Step xsi:type="Step_t">
+        <StepId>1</StepId>
+        <Duration xsi:type="CaloriesBurned_t">
+          <Calories>500</Calories>
+        </Duration>
+        <Intensity>Active</Intensity>
+        <Target xsi:type="HeartRate_t">
+          <HeartRateZone xsi:type="PredefinedHeartRateZone_t">
+            <Number>1</Number>
+          </HeartRateZone>
+        </Target>
+      </Step>
+      <Notes>Your Garmin device can help you shed pounds by counting calories as you cover distance and time. For best results, adjust your Zones to get the most burn for your buck.
+
+Template by: www.TrainingPeaks.com</Notes>
+      <Creator xsi:type="Device_t">
+        <Name>Forerunner305</Name>
+        <UnitId>1234567890</UnitId>
+        <ProductID>484</ProductID>
+        <Version>
+          <VersionMajor>2</VersionMajor>
+          <VersionMinor>80</VersionMinor>
+          <BuildMajor>0</BuildMajor>
+          <BuildMinor>0</BuildMinor>
+        </Version>
+      </Creator>
+    </Workout>
+  </Workouts>
+
+  <Courses/>
+
+  <Author xsi:type="Application_t">
+    <Name>Garmin Training Center</Name>
+    <Build>
+      <Version>
+        <VersionMajor>2</VersionMajor>
+        <VersionMinor>1</VersionMinor>
+        <BuildMajor>6</BuildMajor>
+        <BuildMinor>0</BuildMinor>
+      </Version>
+      <Type>Release</Type>
+      <Time>, </Time>
+      <Builder></Builder>
+    </Build>
+    <LangID>en</LangID>
+    <PartNumber>006-A0183-00</PartNumber>
+  </Author>
+
+</TrainingCenterDatabase>
