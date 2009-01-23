@@ -11,7 +11,7 @@ class TestTrackPoint < Test::Unit::TestCase
     should "have a longitude" do
       tp = Garmin::TrackPoint.new
       tp.longitude = -84.5902028
-      assert_equal -84.5902028, tp.longitude
+      assert_equal(-84.5902028, tp.longitude)
     end
     
     should "have an altitude" do
