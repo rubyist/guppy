@@ -24,12 +24,14 @@ module Garmin
     def parse
       case self.class.file_type(@file_name)
       when TCX
-        @doc = Garmin::TcxParser.new(@file_name)
+        @doc = Garmin::TcxParser.open(@file_name)
       when GPX
-        @doc = Garmin::GpxParser.new(@file_name)
+        @doc = Garmin::GpxParser.open(@file_name)
       end
+    end
+
+    def activities
+      @doc.activities
     end
   end
 end
-
-# Db.open('file') => chooses parser, parses, new db

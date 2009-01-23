@@ -48,13 +48,20 @@ class TestDb < Test::Unit::TestCase
 
   context "parsing" do
     should "use TcxParser for tcx files" do
-      flexmock(Garmin::TcxParser).should_receive(:new).with('foo.tcx').once
+      flexmock(Garmin::TcxParser).should_receive(:open).with('foo.tcx').once
       Garmin::Db.new('foo.tcx').parse
     end
 
     should "use GpxParser for gpx files" do
-      flexmock(Garmin::GpxParser).should_receive(:new).with('foo.gpx').once
+      flexmock(Garmin::GpxParser).should_receive(:open).with('foo.gpx').once
       Garmin::Db.new('foo.gpx').parse
+    end
+  end
+
+  context "activities" do
+    should "have one activity" do
+      db = Garmin::Db.open(tcx_fixture_file)
+      assert_equal 1, db.activities.size
     end
   end
 end
