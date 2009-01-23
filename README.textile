@@ -4,12 +4,14 @@ Supported formats:
  * tcx (From Garmin Training Center)
  * gpx (From LoadMyTracks)
 
+# DONE
 g = Garmin.open('file.tcx')
-
 g.activities
-g.activities('2009-01-12T19:28:18Z')
+g.activity('2009-01-12T19:28:18Z')
 
-# Select an activity
+
+# TODO
+
 activity.date
 activity.activity_type
 activity.distance
@@ -29,3 +31,5 @@ activity.track_points[0].heart_rate
 activity.track_points[0].time
 activity.track_points[0].distance
 
+
+activity.lap[0].points[0].latitude # ... etc

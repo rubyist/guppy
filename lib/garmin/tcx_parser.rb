@@ -20,18 +20,36 @@ module Garmin
       f.close
     end
 
-    def activities
-      @doc.xpath('//xmlns:Activity', @doc.root.namespaces).map do |xml_activity|
-        activity = Activity.new
-        activity.sport = xml_activity['Sport']
-        activity.date = Time.parse(xml_activity.xpath('xmlns:Id', @doc.root.namespaces).inner_text)
-
-        activity.distance = xml_activity.xpath('xmlns:Lap', @doc.root.namespaces).inject(0.0) do |sum, acc|
-          sum + acc.xpath('xmlns:DistanceMeters', @doc.root.namespaces).inner_text.to_f
-        end
-        
-        activity
+    def activity(activity_id)
+      activity_node = @doc.xpath('//xmlns:Activity', namespaces).find {|a| a.xpath('xmlns:Id', namespaces).inner_text == activity_id}
+      if activity_node
+        build_activity(activity_node)
+      else
+        nil
       end
+    end
+    
+    def activities(id=nil)
+      @doc.xpath('//xmlns:Activity', namespaces).map do |activity_node|
+        build_activity(activity_node)
+      end
+    end
+
+    private
+    def build_activity(activity_node)
+      activity = Activity.new
+      activity.sport = activity_node['Sport']
+      activity.date = Time.parse(activity_node.xpath('xmlns:Id', namespaces).inner_text)
+      
+      activity.distance = activity_node.xpath('xmlns:Lap', namespaces).inject(0.0) do |sum, acc|
+        sum + acc.xpath('xmlns:DistanceMeters', namespaces).inner_text.to_f
+      end
+      
+      activity
+    end
+
+    def namespaces
+      @namespaces ||= @doc.root.namespaces
     end
   end
 end
