@@ -33,5 +33,9 @@ module Garmin
     def activities
       @doc.activities
     end
+
+    def activity(activity_id)
+      @doc.activity(activity_id)
+    end
   end
 end

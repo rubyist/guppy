@@ -63,5 +63,10 @@ class TestDb < Test::Unit::TestCase
       db = Garmin::Db.open(tcx_fixture_file)
       assert_equal 1, db.activities.size
     end
+
+    should "find an activity" do
+      db = Garmin::Db.open(tcx_fixture_file)
+      assert db.activity('2009-01-12T19:28:18Z')
+    end
   end
 end
