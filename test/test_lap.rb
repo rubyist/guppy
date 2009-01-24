@@ -29,6 +29,10 @@ class TestLap < Test::Unit::TestCase
     should "have a max_heart_rate" do
       assert_equal 0, Garmin::Lap.new.max_heart_rate
     end
+
+    should "have track_points" do
+      assert_equal [], Garmin::Lap.new.track_points
+    end
   end
 end
 

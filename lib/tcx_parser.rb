@@ -40,14 +40,42 @@ module Garmin
       activity = Activity.new
       activity.sport = activity_node['Sport']
       activity.date = Time.parse(activity_node.xpath('xmlns:Id', namespaces).inner_text)
-      
-      activity.distance = activity_node.xpath('xmlns:Lap', namespaces).inject(0.0) do |sum, acc|
-        sum + acc.xpath('xmlns:DistanceMeters', namespaces).inner_text.to_f
+
+      activity_node.xpath('xmlns:Lap', namespaces).each do |lap_node|
+        activity.laps << build_lap(lap_node)
       end
       
       activity
     end
 
+    def build_lap(lap_node)
+      lap = Garmin::Lap.new
+      lap.distance = lap_node.xpath('xmlns:DistanceMeters', namespaces).inner_text.to_f
+      lap.max_speed = lap_node.xpath('xmlns:MaximumSpeed', namespaces).inner_text.to_f
+      lap.time = lap_node.xpath('xmlns:TotalTimeSeconds', namespaces).inner_text.to_f
+      lap.calories = lap_node.xpath('xmlns:Calories', namespaces).inner_text.to_f
+      lap.average_heart_rate = lap_node.xpath('xmlns:AverageHeartRateBpm/xmlns:Value', namespaces).inner_text.to_i
+      lap.max_heart_rate = lap_node.xpath('xmlns:MaximumHeartRateBpm/xmlns:Value', namespaces).inner_text.to_i
+
+      lap_node.xpath('xmlns:Track/xmlns:Trackpoint', namespaces).each do |track_point_node|
+        lap.track_points << build_track_point(track_point_node)
+      end
+      
+      lap
+    end
+
+    def build_track_point(track_point_node)
+      track_point = Garmin::TrackPoint.new
+      track_point.latitude = track_point_node.xpath('xmlns:Position/xmlns:LatitudeDegrees', namespaces).inner_text.to_f
+      track_point.longitude = track_point_node.xpath('xmlns:Position/xmlns:LongitudeDegrees', namespaces).inner_text.to_f
+      track_point.altitude = track_point_node.xpath('xmlns:AltitudeMeters', namespaces).inner_text.to_f
+      track_point.distance = track_point_node.xpath('xmlns:DistanceMeters', namespaces).inner_text.to_f
+      track_point.heart_rate = track_point_node.xpath('xmlns:HeartRateBpm/xmlns:Value', namespaces).inner_text.to_i
+      track_point.time = Time.parse(track_point_node.xpath('xmlns:Time', namespaces).inner_text)
+      
+      track_point
+    end
+    
     def namespaces
       @namespaces ||= @doc.root.namespaces
     end

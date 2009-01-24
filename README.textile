@@ -8,28 +8,20 @@ Supported formats:
 g = Garmin.open('file.tcx')
 g.activities
 g.activity('2009-01-12T19:28:18Z')
+activity.date
+activity.sport
+activity.distance
+activity.laps
+lap.distance, etc
+lap.trackpoints
+lap.track_points[0].latitude
+lap.track_points[0].longitude
+lap.track_points[0].altitude
+lap.track_points[0].heart_rate
+lap.track_points[0].time
+lap.track_points[0].distance
 
 
 # TODO
-
-activity.date
-activity.activity_type
-activity.distance
 activity.average_pace
 activity.average_heart_rate
-
-
-activity.track_points
-
-activity.track_points.pace
-activity.track_points.heart_rate
-
-activity.track_points[0].latitude
-activity.track_points[0].longitude
-activity.track_points[0].altitude
-activity.track_points[0].heart_rate
-activity.track_points[0].time
-activity.track_points[0].distance
-
-
-activity.lap[0].points[0].latitude # ... etc

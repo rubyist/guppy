@@ -114,4 +114,76 @@ class TestTcxParser < Test::Unit::TestCase
       @p.activity('2009-01-12T19:28:18Z')
     end
   end
+
+  context "building Laps" do
+    setup do
+      @p = Garmin::TcxParser.new(tcx_fixture_file)
+      @p.parse
+      @activity = @p.activities.first
+    end
+
+    should "build the Lap" do
+      assert_equal 1, @activity.laps.size
+    end
+
+    should "have the right distance on the lap" do
+      assert_equal 1609.3439941, @activity.laps.first.distance
+    end
+
+    should "have the max speed on the lap" do
+      assert_equal 3.4845836, @activity.laps.first.max_speed
+    end
+
+    should "have the time on the lap" do
+      assert_equal 641.43, @activity.laps.first.time
+    end
+
+    should "have the calories on the lap" do
+      assert_equal 170, @activity.laps.first.calories
+    end
+
+    should "have the average heart rate on the lap" do
+      assert_equal 184, @activity.laps.first.average_heart_rate
+    end
+
+    should "have the max hart rate on the lap" do
+      assert_equal 196, @activity.laps.first.max_heart_rate
+    end
+  end
+
+  context "building TrackPoints" do
+    setup do
+      @p = Garmin::TcxParser.new(tcx_fixture_file)
+      @p.parse
+      @lap = @p.activities.first.laps.first
+    end
+    
+    should "build the track points" do
+      assert_equal 1, @lap.track_points.size
+    end
+
+    should "have a latitude" do
+      assert_equal 37.1057968, @lap.track_points.first.latitude
+    end
+
+    should "have a longitude" do
+      assert_equal -80.5901920,  @lap.track_points.first.longitude
+    end
+
+    should "have an altitude" do
+      assert_equal 253.9254150,  @lap.track_points.first.altitude
+    end
+
+    should "have a heart rate" do
+      assert_equal 130, @lap.track_points.first.heart_rate
+    end
+
+    should "have a distance" do
+      assert_equal 3.141, @lap.track_points.first.distance
+    end
+
+    should "have a time" do
+      assert_equal Time.parse('2009-01-12T19:28:18Z'), @lap.track_points.first.time
+    end
+  end
 end

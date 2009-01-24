@@ -6,7 +6,8 @@ module Garmin
     attr_accessor :calories
     attr_accessor :average_heart_rate
     attr_accessor :max_heart_rate
-
+    attr_reader   :track_points
+    
     def initialize
       @distance           = 0.0
       @max_speed          = 0.0
@@ -14,6 +15,8 @@ module Garmin
       @calories           = 0
       @average_heart_rate = 0
       @max_heart_rate     = 0
+      @track_points       = []
     end
+
   end
 end

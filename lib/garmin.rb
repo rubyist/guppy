@@ -3,6 +3,7 @@ require File.join(File.dirname(__FILE__), 'track_point')
 require File.join(File.dirname(__FILE__), 'tcx_parser')
 require File.join(File.dirname(__FILE__), 'gpx_parser')
 require File.join(File.dirname(__FILE__), 'db')
+require File.join(File.dirname(__FILE__), 'lap')
 
 module Garmin
   TCX = 'tcx'
