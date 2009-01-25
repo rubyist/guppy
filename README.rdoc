@@ -1,27 +1,42 @@
-Utility classes for dealing with Garmin Forerunner data.
+= Garmin - Ruby library for handling tcx files
 
-Supported formats:
- * tcx (From Garmin Training Center)
- * gpx (From LoadMyTracks)
+This library provides a set of classes for working with tcx dumps from
+Garmin devices such as the Forerunner 305.
 
-# DONE
-g = Garmin.open('file.tcx')
-g.activities
-g.activity('2009-01-12T19:28:18Z')
-activity.date
-activity.sport
-activity.distance
-activity.laps
-lap.distance, etc
-lap.trackpoints
-lap.track_points[0].latitude
-lap.track_points[0].longitude
-lap.track_points[0].altitude
-lap.track_points[0].heart_rate
-lap.track_points[0].time
-lap.track_points[0].distance
+== Examples
+  db = Garmin::Db.open('foo.tcx')
+  db.activities.each do |activity|
+    puts activity.date
+  end
+
+  run = db.activity('2009-01-12T19:28:18Z')
+  run.laps.each do |lap|
+    puts "Lap Time: #{lap.time}"
+    puts "Lap Distance: #{lap.distance}"
+    puts "Lap Calories: #{lap.calories}"
+    lap.track_points.each do |track_point|
+      puts "#{track_point.latitude} #{track_point.longitude}"
+    end
+  end
 
 
-# TODO
-activity.average_pace
-activity.average_heart_rate
+== TODO
+
+* Get aggregated pace and heart rate signals for an activity
+* Make it faster and avoid re-parsing the db in some instances
+* A nicer way to find a specific activity
+* Support gpx format
+
+= Other Stuff
+
+Author::  Scott Barron <scott at elitists dot net>
+License:: Copyright 2009 by Scott Barron.
+          Released under an MIT-style license.  See the MIT-LICENSE
+          file included in the distribution.
+GitHub::  http://github.com/rubyist/garmin/tree/master
+
+== Warranty
+
+This software is provided "as is" and without any express or implied
+warranties, including, without limitation, the implied warranties of
+merchantibility and fitness for a particular purpose.
