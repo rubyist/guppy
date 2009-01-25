@@ -167,7 +167,7 @@ class TestTcxParser < Test::Unit::TestCase
     end
 
     should "have a longitude" do
-      assert_equal -80.5901920,  @lap.track_points.first.longitude
+      assert_equal(-80.5901920,  @lap.track_points.first.longitude)
     end
 
     should "have an altitude" do
