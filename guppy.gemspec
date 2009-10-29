@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{garmin}
+  s.name = %q{guppy}
   s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Scott Barron"]
-  s.date = %q{2009-10-28}
+  s.date = %q{2009-10-29}
   s.description = %q{foo}
   s.email = %q{scott@elitists.net}
   s.extra_rdoc_files = [
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "doc/jamis.rb",
-     "garmin.gemspec",
+     "guppy.gemspec",
      "lib/garmin.rb",
      "lib/garmin/activity.rb",
      "lib/garmin/db.rb",
@@ -40,7 +40,7 @@ Gem::Specification.new do |s|
      "test/test_tcx_parser.rb",
      "test/test_track_point.rb"
   ]
-  s.homepage = %q{http://github.com/rubyist/garmin}
+  s.homepage = %q{http://github.com/rubyist/guppy}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}

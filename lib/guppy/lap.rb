@@ -1,4 +1,4 @@
-module Garmin
+module Guppy
   class Lap
     attr_accessor :distance
     attr_accessor :max_speed

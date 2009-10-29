@@ -1,15 +1,15 @@
-# Rakefile for garmin -*- ruby -*-
+# Rakefile for guppy -*- ruby -*-
 require 'rubygems'
 require 'rake'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
-    gemspec.name = 'garmin'
+    gemspec.name = 'guppy'
     gemspec.summary = 'Ruby library for parsing tcx and gpx files'
     gemspec.description = 'foo'
     gemspec.email = 'scott@elitists.net'
-    gemspec.homepage = 'http://github.com/rubyist/garmin'
+    gemspec.homepage = 'http://github.com/rubyist/guppy'
     gemspec.authors = ['Scott Barron']
     gemspec.add_development_dependency "thoughtbot-shoulda", ">= 0"
   end
@@ -48,7 +48,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "garmin #{version}"
+  rdoc.title = "guppy #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

@@ -1,4 +1,4 @@
-module Garmin
+module Guppy
   class Activity
     attr_accessor :sport
     attr_accessor :date

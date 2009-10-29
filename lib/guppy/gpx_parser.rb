@@ -1,4 +1,4 @@
-module Garmin
+module Guppy
   class GpxParser
     def self.open(file)
       parser = self.new(file)
@@ -43,7 +43,7 @@ module Garmin
     end
 
     def build_lap(lap_node)
-      lap = Garmin::Lap.new
+      lap = Guppy::Lap.new
       total_distance = 0.0
       lap_node.xpath('xmlns:trkpt', namespaces).each do |track_point_node|
         track_point = build_track_point(track_point_node, total_distance)
@@ -55,7 +55,7 @@ module Garmin
     end
 
     def build_track_point(track_point_node, total_distance)
-      track_point = Garmin::TrackPoint.new
+      track_point = Guppy::TrackPoint.new
       track_point.latitude = track_point_node['lat'].to_f
       track_point.longitude = track_point_node['lon'].to_f
       track_point.altitude = track_point_node.xpath('xmlns:ele', namespaces).inner_text.to_f

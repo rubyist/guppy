@@ -3,35 +3,35 @@ require 'helper'
 class TestTcxParser < Test::Unit::TestCase
   context "existance" do
     should "exist" do
-      assert Garmin::TcxParser.new('foo.tcx')
+      assert Guppy::TcxParser.new('foo.tcx')
     end
   end
 
   context "opening" do
     should "should create the tcx parser object" do
-      flexmock(Garmin::TcxParser).should_receive(:new).with('foo.tcx').and_return(flexmock('parser', :parse => '')).once
-      Garmin::TcxParser.open('foo.tcx')
+      flexmock(Guppy::TcxParser).should_receive(:new).with('foo.tcx').and_return(flexmock('parser', :parse => '')).once
+      Guppy::TcxParser.open('foo.tcx')
     end
 
     should "parse the file" do
       parser = flexmock('parser')
       parser.should_receive(:parse).once
-      flexmock(Garmin::TcxParser).should_receive(:new).and_return(parser)
+      flexmock(Guppy::TcxParser).should_receive(:new).and_return(parser)
       
-      Garmin::TcxParser.open('foo.tcx')
+      Guppy::TcxParser.open('foo.tcx')
     end
 
     should "return the TcxParser object" do
       parser = flexmock('parser', :parse => '')
-      flexmock(Garmin::TcxParser).should_receive(:new).with('foo.tcx').and_return(parser)
+      flexmock(Guppy::TcxParser).should_receive(:new).with('foo.tcx').and_return(parser)
 
-      assert_equal parser, Garmin::TcxParser.open('foo.tcx')
+      assert_equal parser, Guppy::TcxParser.open('foo.tcx')
     end
   end
 
   context "parsing" do
     setup do
-      @parser = Garmin::TcxParser.new('foo.tcx')
+      @parser = Guppy::TcxParser.new('foo.tcx')
     end
     
     should "open the file" do
@@ -69,7 +69,7 @@ class TestTcxParser < Test::Unit::TestCase
 
   context "finding all activities" do
     setup do
-      @p = Garmin::TcxParser.new(tcx_fixture_file)
+      @p = Guppy::TcxParser.new(tcx_fixture_file)
       @p.parse
     end
     
@@ -78,7 +78,7 @@ class TestTcxParser < Test::Unit::TestCase
     end
 
     should "create Activity objects" do
-      assert @p.activities.first.is_a?(Garmin::Activity), "Expected an Activity, got a #{@p.activities.first.class}"
+      assert @p.activities.first.is_a?(Guppy::Activity), "Expected an Activity, got a #{@p.activities.first.class}"
     end
 
     should "give the Activity objects a sport property" do
@@ -96,12 +96,12 @@ class TestTcxParser < Test::Unit::TestCase
 
   context "finding a specific activity" do
     setup do
-      @p = Garmin::TcxParser.new(tcx_fixture_file)
+      @p = Guppy::TcxParser.new(tcx_fixture_file)
       @p.parse
     end
     
     should "return an activity" do
-      assert @p.activity('2009-01-12T19:28:18Z').is_a?(Garmin::Activity)
+      assert @p.activity('2009-01-12T19:28:18Z').is_a?(Guppy::Activity)
     end
 
     should "return nil if the activity was not found" do
@@ -117,7 +117,7 @@ class TestTcxParser < Test::Unit::TestCase
 
   context "building Laps" do
     setup do
-      @p = Garmin::TcxParser.new(tcx_fixture_file)
+      @p = Guppy::TcxParser.new(tcx_fixture_file)
       @p.parse
       @activity = @p.activities.first
     end
@@ -153,7 +153,7 @@ class TestTcxParser < Test::Unit::TestCase
 
   context "building TrackPoints" do
     setup do
-      @p = Garmin::TcxParser.new(tcx_fixture_file)
+      @p = Guppy::TcxParser.new(tcx_fixture_file)
       @p.parse
       @lap = @p.activities.first.laps.first
     end

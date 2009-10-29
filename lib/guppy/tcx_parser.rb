@@ -1,4 +1,4 @@
-module Garmin
+module Guppy
   class TcxParser
     def self.open(file)
       parser = self.new(file)
@@ -45,7 +45,7 @@ module Garmin
     end
 
     def build_lap(lap_node)
-      lap = Garmin::Lap.new
+      lap = Guppy::Lap.new
       lap.distance = lap_node.xpath('xmlns:DistanceMeters', namespaces).inner_text.to_f
       lap.max_speed = lap_node.xpath('xmlns:MaximumSpeed', namespaces).inner_text.to_f
       lap.time = lap_node.xpath('xmlns:TotalTimeSeconds', namespaces).inner_text.to_f
@@ -61,7 +61,7 @@ module Garmin
     end
 
     def build_track_point(track_point_node)
-      track_point = Garmin::TrackPoint.new
+      track_point = Guppy::TrackPoint.new
       track_point.latitude = track_point_node.xpath('xmlns:Position/xmlns:LatitudeDegrees', namespaces).inner_text.to_f
       track_point.longitude = track_point_node.xpath('xmlns:Position/xmlns:LongitudeDegrees', namespaces).inner_text.to_f
       track_point.altitude = track_point_node.xpath('xmlns:AltitudeMeters', namespaces).inner_text.to_f

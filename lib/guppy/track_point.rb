@@ -1,4 +1,4 @@
-module Garmin
+module Guppy
   class TrackPoint
     attr_accessor :latitude
     attr_accessor :longitude

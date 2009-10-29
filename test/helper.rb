@@ -6,7 +6,7 @@ require 'flexmock/test_unit'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'garmin'
+require 'guppy'
 
 def tcx_fixture_file
   File.join(File.dirname(__FILE__), 'fixtures', 'example.tcx')

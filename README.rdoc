@@ -1,10 +1,10 @@
-= Garmin - Ruby library for handling tcx files
+= Guppy - Ruby library for handling tcx files
 
-This library provides a set of classes for working with tcx dumps from
-Garmin devices such as the Forerunner 305.
+This library provides a set of classes for working with tcx and gpx
+dumps from GPS devices such as the Garmin Forerunner 305.
 
 == Examples
-  db = Garmin::Db.open('foo.tcx')
+  db = Guppy::Db.open('foo.tcx')
   db.activities.each do |activity|
     puts activity.date
   end
@@ -25,7 +25,6 @@ Garmin devices such as the Forerunner 305.
 * Get aggregated pace and heart rate signals for an activity
 * Make it faster and avoid re-parsing the db in some instances
 * A nicer way to find a specific activity
-* Support gpx format
 
 = Other Stuff
 
@@ -33,7 +32,7 @@ Author::  Scott Barron <scott at elitists dot net>
 License:: Copyright 2009 by Scott Barron.
           Released under an MIT-style license.  See the MIT-LICENSE
           file included in the distribution.
-GitHub::  http://github.com/rubyist/garmin/tree/master
+GitHub::  http://github.com/rubyist/guppy/tree/master
 
 == Warranty
 

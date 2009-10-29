@@ -1,4 +1,4 @@
-module Garmin
+module Guppy
   class Db
     def self.file_type(file_name)
       case File.extname(file_name).downcase
@@ -24,9 +24,9 @@ module Garmin
     def parse
       case self.class.file_type(@file_name)
       when TCX
-        @doc = Garmin::TcxParser.open(@file_name)
+        @doc = Guppy::TcxParser.open(@file_name)
       when GPX
-        @doc = Garmin::GpxParser.open(@file_name)
+        @doc = Guppy::GpxParser.open(@file_name)
       end
     end
 
