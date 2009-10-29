@@ -1,9 +1,9 @@
-require File.join(File.dirname(__FILE__), 'activity')
-require File.join(File.dirname(__FILE__), 'track_point')
-require File.join(File.dirname(__FILE__), 'tcx_parser')
-require File.join(File.dirname(__FILE__), 'gpx_parser')
-require File.join(File.dirname(__FILE__), 'db')
-require File.join(File.dirname(__FILE__), 'lap')
+require File.join(File.dirname(__FILE__), 'garmin', 'activity')
+require File.join(File.dirname(__FILE__), 'garmin', 'track_point')
+require File.join(File.dirname(__FILE__), 'garmin', 'tcx_parser')
+require File.join(File.dirname(__FILE__), 'garmin', 'gpx_parser')
+require File.join(File.dirname(__FILE__), 'garmin', 'db')
+require File.join(File.dirname(__FILE__), 'garmin', 'lap')
 
 module Garmin
   TCX = 'tcx'
