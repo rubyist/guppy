@@ -1,3 +1,6 @@
+require 'nokogiri'
+require 'time'
+
 require File.join(File.dirname(__FILE__), 'garmin', 'activity')
 require File.join(File.dirname(__FILE__), 'garmin', 'track_point')
 require File.join(File.dirname(__FILE__), 'garmin', 'tcx_parser')

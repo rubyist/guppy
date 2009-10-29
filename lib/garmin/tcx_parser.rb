@@ -1,7 +1,3 @@
-require 'rubygems'
-require 'nokogiri'
-require 'time'
-
 module Garmin
   class TcxParser
     def self.open(file)
