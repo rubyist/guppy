@@ -62,7 +62,8 @@ module Garmin
       track_point.time = Time.parse(track_point_node.xpath('xmlns:time', namespaces).inner_text)
       # GPX distance is cumulative
       d = track_point_node.xpath('xmlns:extensions/gpxdata:distance').inner_text.to_f
-      track_point.distance = d - total_distance
+      tp_distance = d - total_distance
+      track_point.distance = tp_distance > 0.0 ? tp_distance : 0.0
       
       track_point
     end
