@@ -1,4 +1,4 @@
-require 'test/garmin_test_setup'
+require 'helper'
 
 class TestGarmin < Test::Unit::TestCase
   context "methods" do

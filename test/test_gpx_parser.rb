@@ -1,4 +1,4 @@
-require 'test/garmin_test_setup'
+require 'helper'
 
 class TestGpxParser < Test::Unit::TestCase
   context "existence" do

@@ -1,4 +1,4 @@
-require 'test/garmin_test_setup'
+require 'helper'
 
 class TestTrackPoint < Test::Unit::TestCase
   context "setup" do

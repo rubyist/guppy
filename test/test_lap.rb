@@ -1,4 +1,4 @@
-require 'test/garmin_test_setup'
+require 'helper'
 
 class TestLap < Test::Unit::TestCase
   should "exist" do

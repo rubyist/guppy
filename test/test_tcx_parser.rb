@@ -1,4 +1,4 @@
-require 'test/garmin_test_setup'
+require 'helper'
 
 class TestTcxParser < Test::Unit::TestCase
   context "existance" do

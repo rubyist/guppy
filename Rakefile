@@ -1,50 +1,54 @@
 # Rakefile for garmin -*- ruby -*-
+require 'rubygems'
+require 'rake'
+
 begin
-  require "rubygems"
-  require "rake/gempackagetask"
-  require "rake/testtask"
-  require "rake/rdoctask"
-rescue Exception
-  nil
-end
-
-if `ruby -Ilib -rgarmin -e "print Garmin.version"` =~ /([0-9.]+)$/
-  CURRENT_VERSION = $1
-else
-  CURRENT_VERSION = '0.0.0'
-end
-
-desc 'Generate documentation for garmin'
-rd = Rake::RDocTask.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'html'
-  rdoc.template = 'doc/jamis.rb'
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = 'garmin'
-  rdoc.options << '--line-numbers' << '--inline-source' << '--main' << 'README.rdoc' << '--title' << 'Magic Bus'
-  rdoc.rdoc_files.include('README.rdoc', 'lib/**/*.rb', 'doc/**/*.rdoc')
-end
-
-
-desc "Run all tests"
-task :default => [:test]
-
-Rake::TestTask.new(:test) do |t|
-  t.test_files = FileList['test/test*.rb']
-  t.warning = true
-  t.verbose = false
-end
-
-desc "Verify gemspec for github"
-task :verify_gemspec do
-  data = File.read('garmin.gemspec')
-  spec = nil
-  if data !~ %r{!ruby/object:Gem::Specification}
-    Thread.new { spec = eval("$SAFE = 3\n#{data}") }.join
-  else
-    spec = YAML.load(data)
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = 'garmin'
+    gemspec.summary = 'Ruby library for parsing tcx and gpx files'
+    gemspec.description = 'foo'
+    gemspec.email = 'scott@elitists.net'
+    gemspec.homepage = 'http://github.com/rubyist/garmin'
+    gemspec.authors = ['Scott Barron']
+    gemspec.add_development_dependency "thoughtbot-shoulda", ">= 0"
   end
 
-  spec.validate
-  puts spec
-  puts "OK"
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler not available."
+end
+
+require 'rake/testtask'
+Rake::TestTask.new(:test) do |test|
+  test.libs << 'lib' << 'test'
+  test.pattern = 'test/**/test_*.rb'
+  test.verbose = true
+end
+
+begin
+  require 'rcov/rcovtask'
+  Rcov::RcovTask.new do |test|
+    test.libs << 'test'
+    test.pattern = 'test/**/test_*.rb'
+    test.verbose = true
+  end
+rescue LoadError
+  task :rcov do
+    abort "RCov is not available."
+  end
+end
+
+task :test => :check_dependencies
+
+task :default => :test
+
+require 'rake/rdoctask'
+Rake::RDocTask.new do |rdoc|
+  version = File.exist?('VERSION') ? File.read('VERSION') : ""
+
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title = "garmin #{version}"
+  rdoc.rdoc_files.include('README*')
+  rdoc.rdoc_files.include('lib/**/*.rb')
 end

@@ -1,4 +1,4 @@
-require 'test/garmin_test_setup'
+require 'helper'
 
 class TestActivity < Test::Unit::TestCase
   should "have a date" do

@@ -1,4 +1,4 @@
-require 'test/garmin_test_setup'
+require 'helper'
 
 class TestDb < Test::Unit::TestCase
   context "exist" do

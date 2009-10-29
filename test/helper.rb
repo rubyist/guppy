@@ -4,7 +4,9 @@ require 'shoulda'
 require 'flexmock'
 require 'flexmock/test_unit'
 
-require 'lib/garmin'
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'garmin'
 
 def tcx_fixture_file
   File.join(File.dirname(__FILE__), 'fixtures', 'example.tcx')
